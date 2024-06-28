@@ -263,7 +263,7 @@ const Answer = ({
       providerURL = `https://rpc.ankr.com/arbitrum`
       break
     case 'aurora':
-      providerURL = `https://aurora-mainnet.infura.io/v3/${process.env.NEXT_PUBLIC_INFURA_PROJECT_ID}`
+      providerURL = `https://aurora.drpc.org`
       break
     case 'bsc':
       providerURL = 'https://rpc.ankr.com/bsc'
