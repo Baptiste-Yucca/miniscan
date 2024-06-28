@@ -251,16 +251,16 @@ const Answer = ({
   let providerURL: string | null = null
   switch (network) {
     case 'ethereum':
-      providerURL = `https://mainnet.infura.io/v3/${process.env.NEXT_PUBLIC_INFURA_PROJECT_ID}`
+      providerURL = `https://rpc.ankr.com/eth`
       break
     case 'polygon':
-      providerURL = `https://polygon-mainnet.infura.io/v3/${process.env.NEXT_PUBLIC_INFURA_PROJECT_ID}`
+      providerURL = `https://rpc.ankr.com/polygon`
       break
     case 'optimism':
-      providerURL = `https://optimism-mainnet.infura.io/v3/${process.env.NEXT_PUBLIC_INFURA_PROJECT_ID}`
+      providerURL = `https://rpc.ankr.com/optimism`
       break
     case 'arbitrum':
-      providerURL = `https://arbitrum-mainnet.infura.io/v3/${process.env.NEXT_PUBLIC_INFURA_PROJECT_ID}`
+      providerURL = `https://rpc.ankr.com/arbitrum`
       break
     case 'aurora':
       providerURL = `https://aurora-mainnet.infura.io/v3/${process.env.NEXT_PUBLIC_INFURA_PROJECT_ID}`
