@@ -464,7 +464,7 @@ const Home: NextPage = () => {
       <footer className="flex h-20 w-full flex-col items-center justify-center border-t">
         <div>
           by{' '}
-          <a className="underline" href="https://twitter.com/_0xbe1">
+          <a className="underline" href="https://0xbe1.xyz">
             0xbe1
           </a>{' '}
           |{' '}
