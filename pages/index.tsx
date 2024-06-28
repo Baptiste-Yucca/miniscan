@@ -471,8 +471,8 @@ const Home: NextPage = () => {
           <a className="underline" href="https://github.com/0xbe1/miniscan">
             Code
           </a>{' '}
-          <a className="underline" href="https://discord.gg/u5KUjNZ8wy">
-            Community
+          <a className="underline" href="https://t.me/be1labs">
+            Feedback
           </a>{' '}
           | Powered by Etherscan
         </div>
@@ -481,16 +481,8 @@ const Home: NextPage = () => {
             miniscan.xyz
           </a>{' '}
           |{' '}
-          <a className="underline" href="https://theybuidl.xyz">
-            theybuidl.xyz
-          </a>{' '}
-          |{' '}
           <a className="underline" href="https://okgraph.xyz">
             okgraph.xyz
-          </a>{' '}
-          |{' '}
-          <a className="underline" href="https://name3.org">
-            name3.org
           </a>
         </div>
       </footer>
