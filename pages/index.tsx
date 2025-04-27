@@ -249,42 +249,44 @@ const Answer = ({
   }
   const abi: AbiItem[] = JSON.parse(result.data.ABI)
   let providerURL: string | null = null
+  // IMPORTANT : définissez NEXT_PUBLIC_ANKR_API_KEY dans votre fichier .env avec votre clé Ankr
+  const ankrApiKey = process.env.NEXT_PUBLIC_ANKR_API_KEY as string
   switch (network) {
     case 'ethereum':
-      providerURL = `https://rpc.ankr.com/eth`
+      providerURL = `https://rpc.ankr.com/eth/${ankrApiKey}`
       break
     case 'polygon':
-      providerURL = `https://rpc.ankr.com/polygon`
+      providerURL = `https://rpc.ankr.com/polygon/${ankrApiKey}`
       break
     case 'optimism':
-      providerURL = `https://rpc.ankr.com/optimism`
+      providerURL = `https://rpc.ankr.com/optimism/${ankrApiKey}`
       break
     case 'arbitrum':
-      providerURL = `https://rpc.ankr.com/arbitrum`
+      providerURL = `https://rpc.ankr.com/arbitrum/${ankrApiKey}`
+      break
+    case 'bsc':
+      providerURL = `https://rpc.ankr.com/bsc/${ankrApiKey}`
+      break
+    case 'moonbeam':
+      providerURL = `https://rpc.ankr.com/moonbeam/${ankrApiKey}`
+      break
+    case 'avalanche':
+      providerURL = `https://rpc.ankr.com/avalanche/${ankrApiKey}`
+      break
+    case 'celo':
+      providerURL = `https://rpc.ankr.com/celo/${ankrApiKey}`
+      break
+    case 'gnosis':
+      providerURL = `https://rpc.ankr.com/gnosis/${ankrApiKey}`
+      break
+    case 'fantom':
+      providerURL = `https://rpc.ankr.com/fantom/${ankrApiKey}`
       break
     case 'aurora':
       providerURL = `https://aurora.drpc.org`
       break
-    case 'bsc':
-      providerURL = 'https://rpc.ankr.com/bsc'
-      break
-    case 'moonbeam':
-      providerURL = 'https://rpc.ankr.com/moonbeam'
-      break
     case 'moonriver':
       providerURL = 'https://moonriver.public.blastapi.io'
-      break
-    case 'avalanche':
-      providerURL = 'https://rpc.ankr.com/avalanche'
-      break
-    case 'celo':
-      providerURL = 'https://rpc.ankr.com/celo'
-      break
-    case 'gnosis':
-      providerURL = 'https://rpc.ankr.com/gnosis'
-      break
-    case 'fantom':
-      providerURL = 'https://rpc.ankr.com/fantom'
       break
     default:
   }
